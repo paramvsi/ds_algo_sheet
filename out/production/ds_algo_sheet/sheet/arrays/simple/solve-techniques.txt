@@ -1,0 +1,2 @@
+
+1. Hello world : Use simple print statement to print the message on the console.
