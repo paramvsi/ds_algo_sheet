@@ -15,4 +15,7 @@ Approach 3: Using Hashmap
             Hence, we store the Hashmap for all the cumulative sum possible for all ith index and check if sum - k exist for any key. If exist we increase the count by value of the key.
             T C: O(n), and S C: O(n).
 
-#
+# Continuous Subarray Sum:
+Q: Given an integer array nums and an integer k, return true if nums has a continuous subarray of size at least two whose elements sum up to a multiple of k, or false otherwise.
+Sol: We will use the same prefix sum approach as we did in the above problem, but here we will store remainder instead of the sum
+     idea is if (sum1 + sum2) % k = 0, sum1%k + sum2%k = 0, also same in case of minus..
