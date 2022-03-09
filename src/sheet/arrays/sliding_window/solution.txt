@@ -1,0 +1,18 @@
+
+#SubArraySumEqualsK:
+
+Q: Given an array of integers nums and an integer k, return the total number of subarrays whose sum equals to k.
+Solution:
+Approach 1: Brute force: Find the sum of each subarray and then check if its equal to k.
+            T C: O(n3) as Sum of each subarrays takes n3 time.
+Approach 2: Using Cumulative Sum: For each start point takes the sum till end and check if sum[start] - sum[end] = k
+            T C: O(n2)
+Approach 3: Using Hashmap
+            If the cumulative sum(represented by sum[i]sum[i] for sum up to ith index) up to two indices is the same,
+            the sum of the elements lying in between those indices is zero.
+            Extending the same thought further, if the cumulative sum up to two indices, say i and j is at a difference of k,
+            i.e. if sum[i] - sum[j] = k, the sum of elements lying between indices i and j is k.
+            Hence, we store the Hashmap for all the cumulative sum possible for all ith index and check if sum - k exist for any key. If exist we increase the count by value of the key.
+            T C: O(n), and S C: O(n).
+
+#
