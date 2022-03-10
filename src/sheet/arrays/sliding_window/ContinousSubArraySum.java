@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ContinousSubArraySum {
+    // [23,2,4,6,7], k = 6
     public boolean checkSubArraySum(int[] arr, int k) {
         Map<Integer, Integer> cumSumMap = new HashMap<>();
         cumSumMap.put(0, 1);

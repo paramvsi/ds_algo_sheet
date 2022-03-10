@@ -33,3 +33,11 @@
 
                    Do not allocate extra space for another array. You must do this by modifying the input array in-place with O(1) extra memory.
         Solution: Keep two pointers to check the next unique element. Put the next unique element in current position which has duplicate element
+
+# Container With Most Water:
+                You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).
+
+                Find two lines that together with the x-axis form a container, such that the container contains the most water.
+
+                Return the maximum amount of water a container can store.
+        Solution:

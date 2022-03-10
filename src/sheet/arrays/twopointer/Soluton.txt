@@ -1,0 +1,20 @@
+# Find the Duplicate Number
+
+Ques: Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n] inclusive.
+
+      There is only one repeated number in nums, return this repeated number.
+
+      You must solve the problem without modifying the array nums and uses only constant extra space.
+
+Approach 1: Sort the number and find the duplicates
+Approach 2: Use set to store the number, if set contains the element return duplicate elem, O(n) space.
+Approach 3: Floyd's Tortoise and Hare (Cycle Detection) : Use two pointer, fast and slow pointer,
+            Since there are n + 1 numbers, we can start two pointers as the element of index,
+            both start at nums[0], the index at position 0, pointer 1 goes to nums[nums[i]], while pointer 2 goes to nums[i],
+            when cycle is detected we break,
+            now pointer 2 again starts from 0, when two pointer meets that is the starting point of the cycle and the duplicate number.
+
+# Linked List Cycle II
+Ques: Given the head of a linked list, return the node where the cycle begins. If there is no cycle, return null.
+Approach: Use fast and slow pointer, if two pointers meet cycle exist, next is to just find the starting point of cycle.
+
